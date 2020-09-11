@@ -17,5 +17,14 @@ public class PatientRecordTest {
 		yakshaAssert(currentTest(),x==16?"true":"false",businessTestFile);
 		
 	}
+	@Test
+    public void testExceptionConditon() throws Exception{
+	 yakshaAssert(currentTest(),true,boundaryTestFile);
+      }
+
+	@Test
+	public void testBoundaryCondition() throws Exception {
+	  yakshaAssert(currentTest(),true,exceptionTestFile);
+   }
 
 }
